@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trail Map: Privacy Policy</title>
+  <style>
+    :root { --bg:#ffffff; --fg:#1b1d29; --muted:#5d6275; --line:#e4e6ee; --accent:#4f46e5; color-scheme: light dark; }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg:#16171f; --fg:#ecedf4; --muted:#a3a8bb; --line:#2b2d3a; --accent:#9a94ff; }
+    }
+    body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+    main { max-width:720px; margin:0 auto; padding:48px 20px 72px; }
+    h1 { font-size:32px; line-height:1.2; margin:0 0 6px; }
+    h2 { font-size:20px; margin:36px 0 8px; }
+    p, li { color:var(--fg); }
+    .meta { color:var(--muted); margin:0 0 28px; }
+    ul { padding-left:22px; }
+    li { margin:4px 0; }
+    a { color:var(--accent); }
+    table { width:100%; border-collapse:collapse; margin:8px 0; font-size:15.5px; }
+    th, td { text-align:left; padding:8px 10px; border-bottom:1px solid var(--line); vertical-align:top; }
+    code { font:14px ui-monospace,SFMono-Regular,Menlo,monospace; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Trail Map: Privacy Policy</h1>
+  <p class="meta">Effective 23 November 2026</p>
+
+  <p>Trail Map is a browser extension that shows the path of pages you followed in a tab as a short breadcrumb and lets you jump back to any step. This policy explains what information it handles. The short version: everything stays on your device, and nothing is sent to the developer or anyone else.</p>
+
+  <h2>What Trail Map handles</h2>
+  <p>To build the breadcrumb, the extension reads, for each tab you browse in:</p>
+  <ul>
+    <li>the web address (URL) of each page you visit,</li>
+    <li>the title of each page, and</li>
+    <li>how you reached it (for example by following a link, typing an address, or using Back).</li>
+  </ul>
+  <p>This is web browsing history. It is used only to draw the breadcrumb and to take you back to a step when you click it.</p>
+
+  <h2>Where it is stored</h2>
+  <ul>
+    <li>Trails are kept in your browser's temporary session storage (<code>chrome.storage.session</code>). They are erased when you close the browser, when you close the tab, or when you clear them.</li>
+    <li>Your settings (whether tracking is paused and which sites you excluded) are kept in your browser's local extension storage until you change them or remove the extension.</li>
+    <li>Each tab's trail holds at most 100 pages. The oldest are dropped first.</li>
+  </ul>
+
+  <h2>What is never done with your data</h2>
+  <ul>
+    <li>It is not sent to the developer or to any server. The extension makes no network requests.</li>
+    <li>It is not sold, shared, or transferred to third parties.</li>
+    <li>It is not used for advertising, analytics, profiling, or any purpose other than the breadcrumb feature.</li>
+    <li>The extension contains no analytics, tracking code, or remotely loaded code.</li>
+    <li>Site icons are loaded from your browser's own local favicon cache, not from an outside service.</li>
+  </ul>
+
+  <h2>Permissions, and why</h2>
+  <table>
+    <tr><th>Permission</th><th>Why it is needed</th></tr>
+    <tr><td><code>webNavigation</code></td><td>To detect when a tab moves to a new page, so the trail can be built.</td></tr>
+    <tr><td><code>tabs</code></td><td>To read each page's title and address, and to open an earlier step in the tab when you click it.</td></tr>
+    <tr><td><code>storage</code></td><td>To keep the trail in temporary storage and remember your settings.</td></tr>
+    <tr><td><code>favicon</code></td><td>To show each site's icon from the browser's local cache.</td></tr>
+  </table>
+  <p>Your browser may describe these permissions as "read your browsing history". That wording reflects what the permissions allow; this extension uses them only as described here.</p>
+
+  <h2>Your controls</h2>
+  <ul>
+    <li><strong>Pause tracking</strong> stops recording new pages.</li>
+    <li><strong>Exclude this site</strong> stops recording a site and removes it from trails already recorded. Excluded sites can be removed from the list at any time.</li>
+    <li><strong>Clear trail</strong> and <strong>Clear all trails</strong> delete recorded trails immediately.</li>
+    <li>Removing the extension deletes all of its stored data.</li>
+    <li>The extension does not run in Incognito windows unless you allow that in your browser's extension settings.</li>
+  </ul>
+
+  <h2>Children</h2>
+  <p>Trail Map is a general-purpose browsing tool and does not knowingly collect any information from anyone, including children, because it collects nothing.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If the extension's data handling ever changes, this page will be updated and the effective date above will change before the new version is released.</p>
+
+  <h2>Contact</h2>
+  <p>Developer: Uvais Ansari<br>Questions about this policy: <a href="mailto:[uvais724@gmail.com]">[uvais724@gmail.com]</a></p>
+</main>
+</body>
+</html>
